@@ -8,7 +8,7 @@ public class test {
 
         int i;
         Scanner input = new Scanner(System.in);
-        System.out.print("\n Please select what to do:"
+        System.out.print("\n Please make a selection:"
                 + "\n View team stats[1]"
                 + "\n View fixture and result chart [2]"
                 + "\n Show all team rankings[3]"
@@ -21,9 +21,6 @@ public class test {
         if (i > 4)
             System.out.print("Please choose a number between 1 and 4");
         switch (i) {
-
-
-
 
         case1:
 
@@ -41,11 +38,9 @@ public class test {
                 String playerTwo = "";
                 String playerThree = "";
 
-
                 try {
                     x = new Scanner(new File(filePath)); // Tells the scanner to read the file
                     x.useDelimiter("[,/n]"); //used to seperate fields in the file
-
 
                     // checks if there is anything left to read in the file and found is not true
                     while (x.hasNext() && !found) {
@@ -54,7 +49,6 @@ public class test {
                         playerOne = x.next();
                         playerTwo = x.next();
                         playerThree = x.next();
-
 
                         //Is the team name that has been entered true? If so, terminate loop
                         if (teams.equals(searchTerm)) {
@@ -74,8 +68,6 @@ public class test {
                     //If he try catch doesn't work, print error message
                     JOptionPane.showMessageDialog(null, "Error reading file");
                 }
-
-
             }
             break;
         }
