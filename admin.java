@@ -3,15 +3,12 @@ import java.io.*;
 import java.lang.*;
 import java.util.*;
 
-
 public class Main {
     public static void main(String[] args){
 
     public class adminPage {
 
 // >>>>>>>>>> ADMIN PAGE <<<<<<<<<<
-
-
 
         boolean usingAdmin = true;
     do {
@@ -52,18 +49,14 @@ public class Main {
             case 2:
                 System.out.print("Please enter the team name");
                 newTeam = user_input.next();
-
                 break;
 
             // generate fixtures
             case 3:
-
                 break;
 
             // Generate team stats
             case 4:
-
-
                 break;
         }
 
